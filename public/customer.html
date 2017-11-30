@@ -1,0 +1,27 @@
+
+<html>
+<head>
+<title>AmaZOOM</title>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="stylesheets/style.css">
+  <script src="javascripts/app.js"></script>
+</head>
+<body ng-app="store" ng-controller="MainCtrl">
+<div style="margin-left: 5em;">
+<h1 id="site-title"> AmaZOOM </h1>
+
+<h1>Current Products</h1>
+<div ng-repeat="product in products | orderBy: 'name'">
+<input id="checkbox" type="checkbox" ng-model="product.selected">  {{product.name}} - price ${{product.price}} <img src="{{product.image}}"/>
+</div>
+<button ng-click="doOrder()">
+Submit Purchase
+</button>
+
+<h1>Shopping Cart</h1>
+<div ng-repeat="product in catalog | orderBy: 'name'">
+{{product.name}} - price ${{product.price}} <img src="{{product.image}}"/>
+</div>
+</body>
+</html>

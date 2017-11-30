@@ -1,0 +1,23 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+img {
+  width: 200px;
+  height: 100px;
+}
+
+#site-title {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+#checkbox {
+  cursor: pointer;
+}
