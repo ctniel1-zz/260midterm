@@ -1,6 +1,8 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: black;
+  color: yellow;
 }
 
 a {
@@ -12,10 +14,31 @@ img {
   height: 100px;
 }
 
+input {
+  margin: 10px;
+  color: black;
+}
+
+button {
+  background-color: yellow;
+  color: black;
+  border-radius: 15px;
+  border: 5px outset yellow;
+}
+
+div {
+  margin: 10px;
+}
+
 #site-title {
   text-align: center;
   width: 100%;
   margin: auto;
+  margin-bottom: 20px;
+  background-color: yellow;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 #checkbox {
